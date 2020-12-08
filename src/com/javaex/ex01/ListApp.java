@@ -12,12 +12,12 @@ public class ListApp {
 		Ractangle r2 = new Ractangle(12, 15);
 
 		// 배열 위치 안 정하고 자동으로 들어가게 하기
-		RacList rList = new RacList();
+		ObjList rList = new ObjList();
 		rList.add(r1);
 		rList.add(r2);
 
-		Ractangle r100 = rList.get(0);
-		r100.draw();
+		//Ractangle r100 = rList.get(0); Rectangle 클래스를 바꿔서 오류남
+		//r100.draw();
 
 		// 배열값 개수
 		System.out.println(rList.size());
