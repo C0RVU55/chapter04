@@ -15,8 +15,6 @@ public class ListApp {
 		// ArrayList<Rectangle> rList = new ArrayList<Rectangle>();
 		LinkedList<Rectangle> rList = new LinkedList<Rectangle>();
 
-		// List인터페이스를 부모로 하고 ArrayList, LinkedList를 구현해놓은 이유 : 같은 list지만 상황에 따라 쓰임이 달라서 언제든 전환하기 쉽게 같은 메소드를 쓰게 하려고?
-
 		Rectangle r1 = new Rectangle(3, 3);
 		Rectangle r2 = new Rectangle(5, 5);
 
@@ -35,6 +33,10 @@ public class ListApp {
 		for (int i = 0; i < rList.size(); i++) {
 			rList.get(i).draw(); //rList에서 Rectangle의 주소값을 return받아서 Rectangle의 메소드인 draw()를 호출함.
 		}
+		
+		//이거는 ArrayList에 있는 toString가 작동하긴 해서 모든 배열값이 나오긴 하는데 Rectangle에서 재정의한 toString을 참고해서 출력됨.
+		System.out.println("------toString");
+		System.out.println(rList.toString()); 
 
 		// 배열 위치 정해서 넣기
 		System.out.println("-------");
@@ -74,6 +76,8 @@ public class ListApp {
 		for (int i = 0; i < cList.size(); i++) {
 			cList.get(i).draw();
 		}
+		
+		cList.toString();
 
 	}
 
